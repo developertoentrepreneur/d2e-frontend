@@ -1,4 +1,4 @@
-# Developer To Entrepreneur Fronted
+# Developer To Entrepreneur Frontend
 
 ## Project based on Vue
 

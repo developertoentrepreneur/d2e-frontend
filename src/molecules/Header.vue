@@ -52,7 +52,7 @@
 
 <script>
 import "./header.css";
-import MyButton from "@/components/atoms/Button.vue";
+import MyButton from "@/atoms/Button.vue";
 
 export default {
   name: "my-header",

@@ -6,10 +6,8 @@
 </template>
 
 <script>
-import Image from "@/components/atoms/Image.vue";
 export default {
   name: "HelloWorld",
-  components: [Image],
   props: {
     msg: String,
   },

@@ -8,6 +8,17 @@ services:
     volumes:
        - node_modules:/app/node_modules
        - ".:/app"
+  
+  d2e-storybook:
+    build: .
+    command: npm run storybook
+    container_name: d2e-storybook
+    volumes:
+       - node_modules:/app/node_modules
+       - ".:/app"
+    ports:
+      - 6006:6006
+
 
 
 volumes:

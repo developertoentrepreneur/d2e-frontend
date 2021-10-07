@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import "./button.css";
 import { reactive, computed } from "vue";
 
 export default {
@@ -55,7 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 .storybook-button {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 3em;

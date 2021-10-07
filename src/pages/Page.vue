@@ -93,3 +93,11 @@ export default {
   emits: ["login", "logout", "createAccount"],
 };
 </script>
+
+
+
+<style scoped lang="scss">
+section {
+  font-family: "Montserrat", sans-serif;
+}
+</style>

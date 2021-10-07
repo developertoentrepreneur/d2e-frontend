@@ -1,14 +1,13 @@
 import CardContainer from './CardContainer';
 
 export default {
-  title: 'library/cards/CardContainer',
-  component: CardContainer,
+    title: 'Atoms/CardContainer',
+    component: CardContainer
 };
 
 export const Default = () => ({
-  components: { CardContainer },
-  template: `
+    components: { CardContainer },
+    template: `
   <CardContainer>
-  </CardContainer>`,
-  
+  </CardContainer>`
 });

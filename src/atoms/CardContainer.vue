@@ -1,6 +1,6 @@
 <template>
   <div :class="`${large ? 'large' : ''} deal-card`">
-    <slot><div class="color">Hello</div></slot>
+    <slot><div class="color">Hello this is not Montserrat</div></slot>
   </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
 <style lang="scss" scoped>
 .color {
   color: $grey-300;
+  font-family: Montserrat;
 }
 .deal-card {
   width: 312px;

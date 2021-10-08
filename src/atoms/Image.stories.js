@@ -2,7 +2,10 @@ import Image from './Image.vue';
 
 export default {
     title: 'Atoms/Image',
-    component: Image
+    component: Image,
+    argTypes: {
+        location: { control: { type: 'select', options: ['community', 'podcast', 'tutorial'] } }
+    }
 };
 
 const Template = (args) => ({
@@ -13,11 +16,7 @@ const Template = (args) => ({
         return { args };
     },
     // And then the `args` are bound to your component with `v-bind="args"`
-    template: '<Image />'
+    template: '<Image v-bind="args" />'
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
-    primary: true,
-    label: 'Image'
-};
+export const Default = Template.bind({});

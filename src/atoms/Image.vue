@@ -1,6 +1,9 @@
 <template>
   <div>
-    <img :src="require(`@/assets/images/${location}.png`)" />
+    <img
+      :src="require(`@/assets/images/homepage/${location}.png`)"
+      class="image"
+    />
   </div>
 </template>
 
@@ -12,11 +15,16 @@ export default {
     location: {
       type: String,
       required: true,
-      default: "homepage/community",
+      default: "community",
     },
   },
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.image {
+  display: block;
+  height: 400px;
+  width: auto;
+}
 </style>

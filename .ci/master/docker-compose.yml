@@ -1,0 +1,22 @@
+version: "3.5"
+
+networks:
+  web:
+    external: true
+    name: web
+  internal:
+    name: internal
+    driver: overlay
+
+services:
+  frontend:
+    image: alvarolloret/d2e-frontend:master
+    deploy:
+      labels:
+        - traefik.http.routers.frontend.rule=Host(`developertoentrepreneur.com`) 
+        - traefik.http.routers.frontend.tls=true
+        - traefik.http.routers.frontend.tls.certresolver=lets-encrypt
+        - traefik.http.services.frontend.loadbalancer.server.port=80
+    networks:
+      - internal
+      - web

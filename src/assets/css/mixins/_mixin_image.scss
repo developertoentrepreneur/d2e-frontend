@@ -1,0 +1,22 @@
+@mixin imagePadding {
+    padding: 0px 50px 0px 50px;
+    @media (max-width: $xxl) {
+        padding: 0px 80px 0px 80px;
+    }
+    @media (max-width: $lg) {
+        padding: 0px 50px 0px 50px;
+    }
+    @media (max-width: $md) {
+        padding: 0px 30px 0px 30px;
+    }
+    @media (max-width: $sm) {
+        padding: 0px 50px 0px 50px;
+    }
+    // @media (max-width: $xs) {
+    //     padding: 0px 30px 0px 30px;
+    // }
+    // @media (max-width: $xss) {
+    //     padding: 0px 20px 0px 20px;
+    // }
+    
+}

@@ -16,4 +16,7 @@ h1 {
     font: $main-font-regular, sans-serif;
     font-size: $xlarge-font-size;
     color: $text-color;
+    @media (max-width: $sm) {
+      font-size: $large-font-size;
+    }
 }

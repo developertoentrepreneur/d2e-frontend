@@ -38,14 +38,6 @@ export default {
 .image {
   padding: 0px 150px 0px 150px;
 
-  @media (min-width: $md) {
-    padding: 0px 150px 0px 150px;
-  }
-  @media (min-width: $xs) {
-    padding: 0px 100px 0px 100px;
-  }
-  @media (min-width: $xss) {
-    padding: 0px 50px 0px 50px;
-  }
+  @include imagePadding;
 }
 </style>

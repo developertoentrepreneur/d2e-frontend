@@ -25,6 +25,10 @@ export default {
 }
 .text {
   max-width: 300px;
+  @media (max-width: $sm) {
+    max-width: 200px;
+    font-size: $xlarge-font-size;
+  }
 }
 .logo {
   max-width: 70px;

@@ -2,7 +2,9 @@
   <div>
     <div class="content-container">
       <SectionCommunity />
+      <div class="spacing"></div>
       <SectionPodcast />
+      <div class="spacing"></div>
       <SectionTutorials />
     </div>
   </div>
@@ -37,5 +39,19 @@ li {
 }
 a {
   color: #42b983;
+}
+.spacing {
+  @media (max-width: $xl) {
+    margin: 50px 0px 50px 0px;
+  }
+  @media (max-width: $lg) {
+    margin: 100px 0px 100px 0px;
+  }
+  @media (max-width: $md) {
+    margin: 100px 0px 100px 0px;
+  }
+  @media (max-width: $xs) {
+    margin: 120px 0px 120px 0px;
+  }
 }
 </style>

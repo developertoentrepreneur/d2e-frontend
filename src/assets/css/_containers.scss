@@ -1,9 +1,15 @@
 .content-container{
-    margin: 0px 200px 200px 200px;
-    @media (min-width: $md) {
+    margin: 0px 100px 100px 100px;
+    @media (max-width: $xl) {
+        margin: 0px 100px 0px 100px;
+    }
+    @media (max-width: $lg) {
         margin: 0px 70px 0px 70px;
     }
-    @media (min-width: $xs) {
+    @media (max-width: $md) {
+        margin: 0px 70px 0px 70px;
+    }
+    @media (max-width: $xs) {
         margin: 0px 10px 0px 10px;
     }
 

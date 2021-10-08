@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-2">
+    <div class="col-xl-2 col-6">
       <img
         :src="require(`@/assets/images/homepage/${location}.png`)"
         class="image"
@@ -43,13 +43,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.row {
-  height: 600px;
-  width: 500px;
-}
 .image {
   display: block;
-  max-height: 400px;
+  max-width: 100%;
   width: auto;
 }
 </style>

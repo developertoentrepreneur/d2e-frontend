@@ -8,12 +8,12 @@
 import { reactive, computed } from "vue";
 
 export default {
-  name: "my-button",
+  name: "Button",
 
   props: {
     label: {
       type: String,
-      required: true,
+      default: "Button",
     },
     primary: {
       type: Boolean,

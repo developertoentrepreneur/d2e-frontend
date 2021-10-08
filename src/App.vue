@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <Home msg="Welcome to Your Vue.js App" />
-  <Image location="community" />
+  <Image />
 </template>
 
 <script>

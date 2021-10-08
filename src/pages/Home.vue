@@ -2,14 +2,15 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Test</h2>
+    <SectionCommunity />
   </div>
 </template>
 
 <script>
-import Image from "@/atoms/Image.vue";
+import SectionCommunity from "@/pages/Home/Components/SectionCommunity.vue";
 export default {
   name: "HelloWorld",
-  components: [Image],
+  components: { SectionCommunity },
   props: {
     msg: String,
   },

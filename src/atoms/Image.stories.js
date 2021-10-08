@@ -4,7 +4,9 @@ export default {
     title: 'Atoms/Image',
     component: Image,
     argTypes: {
-        location: { control: { type: 'select', options: ['community', 'podcast', 'tutorial'] } }
+        location: {
+            control: { type: 'select', options: ['homepage/community', 'homepage/podcast', 'homepage/tutorial'] }
+        }
     }
 };
 

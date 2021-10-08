@@ -66,7 +66,7 @@ jobs:
           ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
           deployment_mode: docker-swarm
           copy_stack_file: true
-          stack_file_name: ./.ci/master/docker-compose.yaml
+          stack_file_name: docker-compose.prod.yaml
           args: docker stack deploy --compose-file $FILE --log-level debug --host $HOST
 
 

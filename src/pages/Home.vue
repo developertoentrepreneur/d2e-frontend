@@ -4,16 +4,18 @@
     <h2>Test</h2>
     <SectionCommunity />
     <SectionPodcast />
+    <SectionTutorials />
   </div>
 </template>
 
 <script>
 import SectionCommunity from "@/pages/Home/Components/SectionCommunity.vue";
 import SectionPodcast from "@/pages/Home/Components/SectionPodcast.vue";
+import SectionTutorials from "@/pages/Home/Components/SectionTutorials.vue";
 
 export default {
   name: "HelloWorld",
-  components: { SectionCommunity, SectionPodcast },
+  components: { SectionCommunity, SectionPodcast, SectionTutorials },
   props: {
     msg: String,
   },

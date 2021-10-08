@@ -3,14 +3,17 @@
     <h1>{{ msg }}</h1>
     <h2>Test</h2>
     <SectionCommunity />
+    <SectionPodcast />
   </div>
 </template>
 
 <script>
 import SectionCommunity from "@/pages/Home/Components/SectionCommunity.vue";
+import SectionPodcast from "@/pages/Home/Components/SectionPodcast.vue";
+
 export default {
   name: "HelloWorld",
-  components: { SectionCommunity },
+  components: { SectionCommunity, SectionPodcast },
   props: {
     msg: String,
   },

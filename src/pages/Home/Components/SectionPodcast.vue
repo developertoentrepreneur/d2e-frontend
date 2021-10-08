@@ -1,15 +1,16 @@
 <template>
   <div class="row align-middle">
-    <div class="col-md-6 left">
+    <div class="col-md-6 order-2 image">
+      <Image location="homepage/podcast" />
+    </div>
+    <div class="col-md-6 order-1 left">
       <div class="text-center">
-        <h1>Find and engage with other entreprepreurs.</h1>
+        <h1>Get inspired with interviews to CTOs of successful startups</h1>
       </div>
       <div class="buttons">
-        <div class="mt-3 me-3"><Button label="Learn more" /></div>
-        <div class="mt-3"><Button primary label="Community" /></div>
+        <div class="mt-3"><Button primary label="Podcast" /></div>
       </div>
     </div>
-    <div class="col-md-6 image"><Image /></div>
   </div>
 </template>
 

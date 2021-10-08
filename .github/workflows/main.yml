@@ -67,5 +67,6 @@ jobs:
           deployment_mode: docker-swarm
           copy_stack_file: true
           stack_file_name: ./.ci/master/docker-compose.yaml
+          args: docker stack deploy --compose-file $FILE --log-level debug --host $HOST
 
 

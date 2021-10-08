@@ -3,7 +3,7 @@
     <div class="logo">
       <Image location="logo" />
     </div>
-    <div class="h-100 ms-3">Developer to Entrepreneur</div>
+    <div class="h-100 ms-3 text">Developer to Entrepreneur</div>
   </div>
 </template>
 
@@ -22,6 +22,9 @@ export default {
   align-items: center;
   font: $main-font-title, sans-serif;
   margin-bottom: 150px;
+}
+.text {
+  max-width: 300px;
 }
 .logo {
   max-width: 70px;

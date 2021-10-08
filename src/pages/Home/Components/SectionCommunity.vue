@@ -35,16 +35,16 @@ export default {
   align-items: center;
 }
 .image {
-  padding: 0px 150px 0px 150px;
+  padding: 0px 250px 0px 250px;
 
   @media (min-width: $md) {
-    padding: 0px 150px 0px 150px;
+    padding: 0px 170 0px 170;
   }
   @media (min-width: $xs) {
-    padding: 0px 100px 0px 100px;
+    padding: 0px 120px 0px 120px;
   }
   @media (min-width: $xss) {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 70px 0px 70px;
   }
 }
 </style>

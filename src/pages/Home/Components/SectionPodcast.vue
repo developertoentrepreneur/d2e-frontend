@@ -1,9 +1,9 @@
 <template>
   <div class="row align-middle">
-    <div class="col-md-6 order-2 image">
+    <div class="col-md-6 order-2 order-md-1 image">
       <Image location="homepage/podcast" />
     </div>
-    <div class="col-md-6 order-1 left">
+    <div class="col-md-6 order-1 order-md-2 left">
       <div class="text-center">
         <h1>Get inspired with interviews to CTOs of successful startups</h1>
       </div>

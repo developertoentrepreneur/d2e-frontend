@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex justify-content-center">
     <img :src="require(`@/assets/images/${location}.png`)" class="d2e-image" />
   </div>
 </template>

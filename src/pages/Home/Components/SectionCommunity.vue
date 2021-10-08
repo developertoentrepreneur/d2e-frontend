@@ -1,10 +1,12 @@
 <template>
-  <div class="row">
-    <div class="col-6">
-      <div class="text">Find and engage with other entreprepreurs.</div>
+  <div class="row align-middle">
+    <div class="col-md-6 left">
+      <div class="text">
+        <h1>Find and engage with other entreprepreurs.</h1>
+      </div>
       <div class="buttons"><Button /></div>
     </div>
-    <div class="col-6"><Image /></div>
+    <div class="col-md-6 image"><Image /></div>
   </div>
 </template>
 
@@ -16,5 +18,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lang="scss">
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.image {
+  padding: 50px;
+}
 </style>

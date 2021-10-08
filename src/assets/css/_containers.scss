@@ -1,0 +1,10 @@
+.content-container{
+    margin: 0px 200px 200px 200px;
+    @media (min-width: $md) {
+        margin: 0px 70px 0px 70px;
+    }
+    @media (min-width: $xs) {
+        margin: 0px 10px 0px 10px;
+    }
+
+}

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="content-container">
+      <Title />
       <SectionCommunity />
       <div class="spacing"></div>
       <SectionPodcast />
@@ -14,10 +15,11 @@
 import SectionCommunity from "@/pages/Home/Components/SectionCommunity.vue";
 import SectionPodcast from "@/pages/Home/Components/SectionPodcast.vue";
 import SectionTutorials from "@/pages/Home/Components/SectionTutorials.vue";
+import Title from "@/pages/Home/Components/Title.vue";
 
 export default {
   name: "HelloWorld",
-  components: { SectionCommunity, SectionPodcast, SectionTutorials },
+  components: { SectionCommunity, SectionPodcast, SectionTutorials, Title },
   props: {
     msg: String,
   },

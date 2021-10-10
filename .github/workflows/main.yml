@@ -61,5 +61,6 @@ jobs:
           ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
           deployment_mode: docker-swarm
           stack_file_name: stack-frontend.yml
+          args: d2e
 
 

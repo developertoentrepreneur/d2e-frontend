@@ -1,20 +1,29 @@
-import Home from './Home.vue';
+import MyPage from './Page.vue';
+import * as HeaderStories from '@/molecules/Header.stories';
 
 export default {
-    title: 'Example/Home',
-    component: Home
+    title: 'Pages/Example',
+    component: MyPage
 };
 
 const Template = (args) => ({
     // Components used in your story `template` are defined in the `components` object
-    components: { Home },
+    components: { MyPage },
     // The story's `args` need to be mapped into the template through the `setup()` method
     setup() {
         // Story args can be mapped to keys in the returned object
         return { user: args.user };
     },
     // Then, those values can be accessed directly in the template
-    template: '<Home/>'
+    template: '<my-page :user="user" />'
 });
 
-export const Default = Template.bind({});
+export const LoggedIn = Template.bind({});
+LoggedIn.args = {
+    ...HeaderStories.LoggedIn.args
+};
+
+export const LoggedOut = Template.bind({});
+LoggedOut.args = {
+    ...HeaderStories.LoggedOut.args
+};

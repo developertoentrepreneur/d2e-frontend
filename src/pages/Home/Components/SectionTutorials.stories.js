@@ -1,7 +1,7 @@
 import SectionTutorials from './SectionTutorials.vue';
 
 export default {
-    title: 'Pages/Home/SectionTutorials',
+    title: 'Pages/Home/Components/SectionTutorials',
     component: SectionTutorials
 };
 

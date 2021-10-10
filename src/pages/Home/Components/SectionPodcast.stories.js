@@ -1,7 +1,7 @@
 import SectionPodcast from './SectionPodcast.vue';
 
 export default {
-    title: 'Pages/Home/SectionPodcast',
+    title: 'Pages/Home/Components/SectionPodcast',
     component: SectionPodcast
 };
 

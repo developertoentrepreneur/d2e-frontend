@@ -1,7 +1,7 @@
 import Title from './Title.vue';
 
 export default {
-    title: 'Pages/Home/Title',
+    title: 'Pages/Home/Components/Title',
     component: Title
 };
 

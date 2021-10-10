@@ -1,7 +1,7 @@
 import SectionCommunity from './SectionCommunity.vue';
 
 export default {
-    title: 'Pages/Home/SectionCommunity',
+    title: 'Pages/Home/Components/SectionCommunity',
     component: SectionCommunity
 };
 

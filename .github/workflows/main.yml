@@ -62,6 +62,7 @@ jobs:
           deployment_mode: docker-swarm
           copy_stack_file: true
           stack_file_name: stack-frontend.yml
+          deploy_path: ~/
           args: d2e
 
 

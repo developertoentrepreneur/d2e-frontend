@@ -59,6 +59,6 @@ jobs:
           remote_host: ${{ secrets.HOST_MANAGER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
-          args: swarm deploy --compose-file stack-frontend.yaml d2e
+          args: stack deploy --compose-file stack-frontend.yaml d2e
 
 

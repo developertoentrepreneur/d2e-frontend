@@ -9,7 +9,6 @@ RUN npm install -g @vue/cli
 COPY package*.json ./
 
 RUN npm install
-RUN npm rebuild node-sass
 
 # copie les fichiers et dossiers du projet dans le dossier de travail (par exemple : le dossier 'app')
 COPY . .

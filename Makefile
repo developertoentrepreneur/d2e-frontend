@@ -11,3 +11,6 @@ local-d:
 
 local-build:
 	COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose $(DOCKER_LOCAL) build ${ARGS}
+
+local-build-clean:
+	COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose $(DOCKER_LOCAL) build --no-cache ${ARGS}

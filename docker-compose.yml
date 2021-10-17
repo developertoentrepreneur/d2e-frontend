@@ -1,13 +1,13 @@
 version: '3'
 services:
-  # d2e-frontend:
-  #   build: .
-  #   ports:
-  #     - "8080:8080"
-  #   container_name: d2e-frontend
-  #   volumes:
-  #      - node_modules:/app/node_modules
-  #      - ".:/app"
+  d2e-frontend:
+    build: .
+    ports:
+      - "8080:8080"
+    container_name: d2e-frontend
+    volumes:
+       - "./src:/app/src"
+       - "./public:/app/public"
   
   d2e-storybook:
     build: 
@@ -16,8 +16,7 @@ services:
     command: npm run storybook
     container_name: d2e-storybook
     volumes:
-       - node_modules:/app/node_modules
-       - ".:/app"
+       - "./src:/app/src"
     ports:
       - 6006:6006
 

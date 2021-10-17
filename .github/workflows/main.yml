@@ -61,7 +61,7 @@ jobs:
           ssh_public_key: ${{ secrets.DOCKER_SSH_PUBLIC_KEY }}
           deployment_mode: docker-swarm
           copy_stack_file: true
-          stack_file_name: stack-frontend.yml
+          stack_file_name: docker-compose.yml
           deploy_path: ~/
           args: d2e
 

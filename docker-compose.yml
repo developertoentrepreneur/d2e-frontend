@@ -12,7 +12,7 @@ services:
   d2e-storybook:
     build: 
       context: .
-      dockerfile: .ci/master/Dockerfile.storybook
+      dockerfile: Dockerfile.storybook
     container_name: d2e-storybook
     volumes:
        - "./src:/app/src"

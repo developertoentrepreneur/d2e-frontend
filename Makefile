@@ -9,7 +9,7 @@ local-d:
 	# start develop environment in the deamon
 	ARGS=-d make local
 
-local-build:
+local-build ${ARGS}:
 	COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose $(DOCKER_LOCAL) build ${ARGS}
 
 local-build-clean:

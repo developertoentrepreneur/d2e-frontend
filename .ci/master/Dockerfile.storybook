@@ -18,5 +18,6 @@ RUN npm run build-storybook
 # étape de production
 FROM nginx:stable-alpine as production-stage
 COPY --from=build-stage /app/storybook-static /usr/share/nginx/html
-EXPOSE 80
+COPY nginx.conf /etc/nginx/
+EXPOSE 81
 CMD ["nginx", "-g", "daemon off;"]

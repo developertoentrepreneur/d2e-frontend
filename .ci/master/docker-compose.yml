@@ -13,10 +13,22 @@ services:
     image: alvarolloret/d2e-frontend:master
     deploy:
       labels:
-        - traefik.http.routers.frontend.rule=Host(`developertoentrepreneur.com`) 
+        - traefik.http.routers.frontend.rule=Host(`developertoentrepreneur.com`)
         - traefik.http.routers.frontend.tls=true
         - traefik.http.routers.frontend.tls.certresolver=lets-encrypt
         - traefik.http.services.frontend.loadbalancer.server.port=80
+    networks:
+      - internal
+      - web
+
+  storybook:
+    image: alvarolloret/d2e-storybook:latest
+    deploy:
+      labels:
+        - traefik.http.routers.storybook.rule=Host(`storybook.developertoentrepreneur.com`)
+        - traefik.http.routers.storybook.tls=true
+        - traefik.http.routers.storybook.tls.certresolver=lets-encrypt
+        - traefik.http.services.storybook.loadbalancer.server.port=80
     networks:
       - internal
       - web

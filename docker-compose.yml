@@ -20,6 +20,3 @@ services:
       - 6006:6006
 
 
-
-volumes:
-  node_modules:

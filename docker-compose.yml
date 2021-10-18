@@ -12,8 +12,7 @@ services:
   d2e-storybook:
     build: 
       context: .
-      dockerfile: Dockerfile.storybook
-    command: npm run storybook
+      dockerfile: .ci/master/Dockerfile.storybook
     container_name: d2e-storybook
     volumes:
        - "./src:/app/src"
